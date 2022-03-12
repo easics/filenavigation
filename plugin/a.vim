@@ -89,7 +89,7 @@ func! AlternateFile(splitWindow, ...)
   " nothing found ??
   echo "AlternameFile: unknown file type `".currentFile."'"
 endfunc
-comm! -nargs=? A call AlternateFile(0, <f-args>)
+comm! -nargs=? AF call AlternateFile(0, <f-args>)
 comm! -nargs=? AS call AlternateFile(1, <f-args>)
 
 
